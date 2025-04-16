@@ -46,8 +46,6 @@ def change_contact(args, contacts):
         return 'Invalid name'
 @input_error
 def show_phone(args, contacts):
-    if len(args) != 1:
-        raise ValueError
     name = args[0]
     if name in contacts:
         return contacts[name]
