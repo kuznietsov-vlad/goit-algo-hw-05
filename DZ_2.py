@@ -4,7 +4,7 @@ text = "Загальний дохід працівника складаєтьс�
 
 
 def generator_numbers(text: str):
-    pattern = r'[0-9]+\.\d+' # Числа та числа із плаваючою точкою
+    pattern = r'\s\d+\.\d+\s' 
     matching = re.findall(pattern, text)
 
     for number in matching:
