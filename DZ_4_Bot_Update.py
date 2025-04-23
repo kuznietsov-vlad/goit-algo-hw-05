@@ -1,40 +1,4 @@
-# class LessThanZero(Exception):
-#     def __init__(self, info):
-#         self.info = info
-#     def __str__(self):
-#         return repr(self.info + "test")
-#
-# def positive_values(number):
-#     if number<0:
-#         raise LessThanZero(f'value{number}<0')
-#     print(number)
-#
-# print(positive_values(-6))
-#===================================================================================================
-class LessThanZero(Exception):
-    def __init__(self):
-        self.text()
 
-    def text(self):
-        print('Less that Zero Class')
-
-
-test= LessThanZero()
-
-from dataclasses import dataclass
-
-# @dataclass(order=True,unsafe_hash=True)
-# class Product:
-#     name: str
-#     price: float
-#     param: list
-#
-# product1= Product("Apple", 70, [1,2])
-# product2= Product("Orange", 50, [7, True])
-#
-# print(product1 > product2)
-# print({product1: product2})
-#==============Enum========================
 menu = """
 1)hello - print "How can I help you?
 2)add ___ +38______ - add new name and phone
